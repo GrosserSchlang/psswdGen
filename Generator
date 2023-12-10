@@ -1,0 +1,17 @@
+from random import *
+
+letter_char = 'abcdefghijklmnopqrstuvwxyz'
+
+
+def create_password(psswd_len):
+    password = ''
+    modified_len = round(psswd_len / 2)
+    back_half = psswd_len - modified_len
+    for i in range(0, modified_len):
+        password += str(randint(0, 9))
+    for i in range(0, back_half):
+        password += (letter_char[randint(0, 25)])
+    return password
+
+
+print(create_password(8))
