@@ -14,4 +14,4 @@ def create_password(psswd_len):
     return password
 
 
-print(create_password(8))
+## print(create_password(8)) // **example usage
